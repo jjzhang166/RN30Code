@@ -22,6 +22,13 @@ import MyPage from './page/MyPage';
 import NavigationPage from './page/day10/NavigationPage';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
+import Day2 from './page/day2/Day2'
+import Day3 from './page/day3/Day3'
+import Day4 from './page/day4/Day4'
+import Day5 from './page/day5/Day5'
+import Day6 from './page/day6/Day6'
+import Day7 from './page/day7/Day7'
+import Day8 from './page/day8/Day8'
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -33,7 +40,7 @@ const MyTab = TabNavigator({
         HomePage: {
             screen: HomePage,
             navigationOptions: {
-                header: null,
+                headerTitle:'30 Days of React-Native',
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -47,7 +54,7 @@ const MyTab = TabNavigator({
         MyPage: {
             screen: MyPage,
             navigationOptions: {
-                header: null,
+                headerTitle:'30 Days of React-Native',
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -61,7 +68,7 @@ const MyTab = TabNavigator({
     },
     {
         tabBarPosition: 'bottom',// 显示在底端，android 默认是显示在页面顶端的
-        swipeEnabled: false,// 禁止左右滑动
+        swipeEnabled: true,// 禁止左右滑动
         animationEnabled: false,//切换页面时不显示动画
         backBehavior: 'none',
         lazy: true,
@@ -134,7 +141,56 @@ const MyApp = StackNavigator({
             gesturesEnabled: true,
             headerTitle:'第一天',
         }
-    }
+    },
+    Day2:{
+        screen:Day2,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第二天',
+        }
+    },
+    Day3:{
+        screen:Day3,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第三天',
+        }
+    },
+    Day4:{
+        screen:Day4,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第四天',
+        }
+    },
+    Day5:{
+        screen:Day5,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第五天',
+        }
+    },
+    Day6:{
+        screen:Day6,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第六天',
+        }
+    },
+    Day7:{
+        screen:Day7,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第七天',
+        }
+    },
+    Day8:{
+        screen:Day8,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第八天',
+        }
+    },
 }, {
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
     headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏

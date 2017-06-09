@@ -21,9 +21,6 @@ export default class HomePage extends Component {
     render() {
         return (
             <View style={{ flex: 1, backgroundColor: "#fff" }}>
-                <View style={styles.actionBar} >
-                    <Text >30 Days of React-Native</Text>
-                </View>
                 <FlatList
                     data={this.state.list}
                     renderItem={this._renderItemComponent}
@@ -69,6 +66,27 @@ export default class HomePage extends Component {
             case 0:
                 navigate("Day1");
                 break;
+            case 1:
+                navigate("Day2");
+                break;
+            case 2:
+                navigate("Day3");
+                break;
+            case 3:
+                navigate("Day4");
+                break;
+            case 4:
+                navigate("Day5");
+                break;
+            case 5:
+                navigate("Day6");
+                break;
+            case 6:
+                navigate("Day7");
+                break;
+            case 7:
+                navigate("Day8");
+                break;
             case 10:
                 navigate("MyDrawer");
                 break;
@@ -76,17 +94,3 @@ export default class HomePage extends Component {
         }
     }
 }
-
-
-const styles = StyleSheet.create({
-    actionBar: {
-        height: theme.actionBar.height,
-        backgroundColor: theme.actionBar.backgroundColor,
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: (Platform.OS === 'ios') ? px2dp(40) : 0,
-        flexDirection: 'row',
-        borderBottomWidth: 2 / PixelRatio.get(),
-        borderBottomColor: '#c4c4c4'
-    }
-});
