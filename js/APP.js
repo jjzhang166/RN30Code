@@ -19,7 +19,7 @@ import TabBarItem from './component/TabBarItem';
 import HomePage from './page/HomePage';
 import MyPage from './page/MyPage';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
-
+import Day1 from './page/day1/Day1'
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -28,35 +28,35 @@ global.Android = (Platform.OS === 'android');
 
 
 const MyTab = TabNavigator({
-    HomePage: {
-        screen: HomePage,
-        navigationOptions: {
-            header: null,
-            tabBarLabel: '首页',
-            tabBarIcon: ({ focused, tintColor }) => (
-                <TabBarItem
-                    focused={focused}
-                    normalImage={require('./image/tab_home.png')}
-                    selectedImage={require('./image/tab_home_sg.png')}
-                />
-            )
-        }
+        HomePage: {
+            screen: HomePage,
+            navigationOptions: {
+                header: null,
+                tabBarLabel: '首页',
+                tabBarIcon: ({focused, tintColor}) => (
+                    <TabBarItem
+                        focused={focused}
+                        normalImage={require('./image/tab_home.png')}
+                        selectedImage={require('./image/tab_home_sg.png')}
+                    />
+                )
+            }
+        },
+        MyPage: {
+            screen: MyPage,
+            navigationOptions: {
+                header: null,
+                tabBarLabel: '我的',
+                tabBarIcon: ({focused, tintColor}) => (
+                    <TabBarItem
+                        focused={focused}
+                        normalImage={require('./image/tab_person.png')}
+                        selectedImage={require('./image/tab_person_sg.png')}
+                    />
+                )
+            }
+        },
     },
-    MyPage: {
-        screen: MyPage,
-        navigationOptions: {
-            header: null,
-            tabBarLabel: '我的',
-            tabBarIcon: ({ focused, tintColor }) => (
-                <TabBarItem
-                    focused={focused}
-                    normalImage={require('./image/tab_person.png')}
-                    selectedImage={require('./image/tab_person_sg.png')}
-                />
-            )
-        }
-    },
-},
     {
         tabBarPosition: 'bottom',// 显示在底端，android 默认是显示在页面顶端的
         swipeEnabled: false,// 禁止左右滑动
@@ -109,17 +109,20 @@ const MyApp = StackNavigator({
     MyTab: {
         screen: MyTab,
     },
+    Day1:{
+        screen:Day1,
+        navigationOptions: {
+            gesturesEnabled: true,
+            header: null
+        }
+    }
 }, {
-        mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
-        headerMode: 'none',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
-        onTransitionStart: (a) => {
-        },
-        onTransitionEnd: () => {
-        },
-        transitionConfig: () => ({
-            screenInterpolator: CardStackStyleInterpolator.forHorizontal,
-        })
-    });
+    mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
+    headerMode: 'none',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
+    transitionConfig: () => ({
+        screenInterpolator: CardStackStyleInterpolator.forHorizontal,
+    })
+});
 
 
 export default MyApp;

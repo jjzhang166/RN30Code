@@ -1,6 +1,4 @@
-/**
- * Created by Rabbit on 2017/4/19.
- */
+
 import React, { Component } from 'react';
 import { AppRegistry} from 'react-native';
 
@@ -22,5 +20,5 @@ if (!__DEV__) {
 
 
 
-
+// import Day2 from './page/day2/Day2';
 AppRegistry.registerComponent('RN30Code', () => App);

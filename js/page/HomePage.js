@@ -48,7 +48,7 @@ export default class HomePage extends Component {
         return (
             <View style={{ flex: 1, flexDirection: 'row' }}>
                 {index % 3 == 0 ? null : <View style={{ width: px2dp(1), backgroundColor: theme.lightGray }} />}
-                <TouchableOpacity style={{ flex: 1, alignItems: 'center', justifyContent: 'center', height: px2dp(200) }} onPress={this._OnPressed.bind(this)}>
+                <TouchableOpacity style={{ flex: 1, alignItems: 'center', justifyContent: 'center', height: px2dp(200) }} onPress={this._OnPressed.bind(this,index)}>
                     <Image source={require("../image/15.png")} />
                     <Text >{this.state.list[index]}</Text>
                 </TouchableOpacity>
@@ -63,8 +63,11 @@ export default class HomePage extends Component {
         );
     }
 
-    _OnPressed() {
-
+    _OnPressed(position) {
+        const { navigate } = this.props.navigation;
+        if(position===0){
+            navigate("Day1");
+        }
     }
 }
 
