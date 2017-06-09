@@ -134,42 +134,36 @@ const MyApp = StackNavigator({
     MyDrawer: {
         screen: MyDrawer,
         navigationOptions: {
-            gesturesEnabled: true,
             header: null,
         }
     },
     Day1: {
         screen: Day1,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第一天',
         }
     },
     Day2: {
         screen: Day2,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第二天',
         }
     },
     Day3: {
         screen: Day3,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第三天',
         }
     },
     Day4: {
         screen: Day4,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第四天',
         }
     },
     Day5: {
         screen: Day5,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第五天',
         }
     },
@@ -183,18 +177,21 @@ const MyApp = StackNavigator({
     Day7: {
         screen: Day7,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第七天',
         }
     },
     Day8: {
         screen: Day8,
         navigationOptions: {
-            gesturesEnabled: true,
             headerTitle: '第八天',
         }
     },
 }, {
+    navigationOptions: {
+       // header:null,
+        gesturesEnabled: true,
+        headerStyle:{elevation: 1}
+    },
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
     headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
     transitionConfig: () => ({
