@@ -123,17 +123,21 @@ const MyApp = StackNavigator({
     },
 	MyDrawer: {
         screen: MyDrawer,
+        navigationOptions: {
+            gesturesEnabled: true,
+            header:null,
+        }
     },
     Day1:{
         screen:Day1,
         navigationOptions: {
             gesturesEnabled: true,
-            header: null
+            headerTitle:'第一天',
         }
     }
 }, {
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
-    headerMode: 'none',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
+    headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
     transitionConfig: () => ({
         screenInterpolator: CardStackStyleInterpolator.forHorizontal,
     })
