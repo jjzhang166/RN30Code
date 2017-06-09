@@ -20,5 +20,5 @@ if (!__DEV__) {
 
 
 
-// import Day2 from './page/day2/Day2';
+import Day2 from './page/day2/Day2';
 AppRegistry.registerComponent('RN30Code', () => App);

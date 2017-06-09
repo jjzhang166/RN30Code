@@ -7,7 +7,7 @@ import { //从React Native依赖中导入
     View
 } from 'react-native';
 
-export default class Day1 extends Component {
+export default class Day3 extends Component {
     render() {//绘制界面的方法
         return (
             <View style={styles.container}>

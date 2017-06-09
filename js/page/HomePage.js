@@ -20,7 +20,7 @@ export default class HomePage extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, backgroundColor: "#fff" }}>
+            <View style={{ flex: 1, backgroundColor: "#F5FCFF" }}>
                 <FlatList
                     data={this.state.list}
                     renderItem={this._renderItemComponent}
