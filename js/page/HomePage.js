@@ -65,11 +65,14 @@ export default class HomePage extends Component {
 
     _OnPressed(position) {
         const { navigate } = this.props.navigation;
-        if(position===0){
-            navigate("Day1");
-        }
-        if(position===1){
-            navigate("MyDrawer")
+        switch(position){
+            case 0:
+                navigate("Day1");
+                break;
+            case 10:
+                navigate("MyDrawer");
+                break;
+            default:
         }
     }
 }

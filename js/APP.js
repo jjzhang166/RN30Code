@@ -19,7 +19,7 @@ import theme from './config/theme';
 import TabBarItem from './component/TabBarItem';
 import HomePage from './page/HomePage';
 import MyPage from './page/MyPage';
-import NavigationPage from './page/NavigationPage';
+import NavigationPage from './page/day10/NavigationPage';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
 
@@ -112,7 +112,6 @@ const MyDrawer = DrawerNavigator({
         screen: NavigationPage,
         navigationOptions: {
             gesturesEnabled: true,
-            title: (<Text style={{ flex: 1, textAlign: 'center', color: theme.actionBar.fontColor, fontSize: theme.actionBar.fontSize }}>Navigation组件用法</Text>),
             drawerLabel: 'Home',
         }
     }
