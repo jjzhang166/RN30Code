@@ -40,7 +40,7 @@ const MyTab = TabNavigator({
         HomePage: {
             screen: HomePage,
             navigationOptions: {
-                headerTitle:'30 Days of React-Native',
+                headerTitle: '30 Days of React-Native',
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -54,7 +54,7 @@ const MyTab = TabNavigator({
         MyPage: {
             screen: MyPage,
             navigationOptions: {
-                headerTitle:'30 Days of React-Native',
+                headerTitle: '30 Days of React-Native',
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -127,68 +127,71 @@ const MyDrawer = DrawerNavigator({
 const MyApp = StackNavigator({
     MyTab: {
         screen: MyTab,
+        navigationOptions: {
+            headerTitleStyle: {alignSelf: 'center'}
+        }
     },
-	MyDrawer: {
+    MyDrawer: {
         screen: MyDrawer,
         navigationOptions: {
             gesturesEnabled: true,
-            header:null,
+            header: null,
         }
     },
-    Day1:{
-        screen:Day1,
+    Day1: {
+        screen: Day1,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第一天',
+            headerTitle: '第一天',
         }
     },
-    Day2:{
-        screen:Day2,
+    Day2: {
+        screen: Day2,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第二天',
+            headerTitle: '第二天',
         }
     },
-    Day3:{
-        screen:Day3,
+    Day3: {
+        screen: Day3,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第三天',
+            headerTitle: '第三天',
         }
     },
-    Day4:{
-        screen:Day4,
+    Day4: {
+        screen: Day4,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第四天',
+            headerTitle: '第四天',
         }
     },
-    Day5:{
-        screen:Day5,
+    Day5: {
+        screen: Day5,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第五天',
+            headerTitle: '第五天',
         }
     },
-    Day6:{
-        screen:Day6,
+    Day6: {
+        screen: Day6,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第六天',
+            headerTitle: '第六天',
         }
     },
-    Day7:{
-        screen:Day7,
+    Day7: {
+        screen: Day7,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第七天',
+            headerTitle: '第七天',
         }
     },
-    Day8:{
-        screen:Day8,
+    Day8: {
+        screen: Day8,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第八天',
+            headerTitle: '第八天',
         }
     },
 }, {
