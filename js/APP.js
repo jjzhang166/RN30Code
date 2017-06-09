@@ -1,7 +1,8 @@
 import {
     StackNavigator,
     TabNavigator,
-    TabBarBottom
+    TabBarBottom,
+    DrawerNavigator
 } from 'react-navigation';
 
 import React from 'react';
@@ -18,6 +19,7 @@ import theme from './config/theme';
 import TabBarItem from './component/TabBarItem';
 import HomePage from './page/HomePage';
 import MyPage from './page/MyPage';
+import NavigationPage from './page/NavigationPage';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
 
@@ -105,9 +107,23 @@ const MyTab = TabNavigator({
     }
 );
 
+const MyDrawer = DrawerNavigator({
+    NavigationPage: {
+        screen: NavigationPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            title: (<Text style={{ flex: 1, textAlign: 'center', color: theme.actionBar.fontColor, fontSize: theme.actionBar.fontSize }}>Navigation组件用法</Text>),
+            drawerLabel: 'Home',
+        }
+    }
+})
+
 const MyApp = StackNavigator({
     MyTab: {
         screen: MyTab,
+    },
+	MyDrawer: {
+        screen: MyDrawer,
     },
     Day1:{
         screen:Day1,

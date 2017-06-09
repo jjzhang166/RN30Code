@@ -68,6 +68,9 @@ export default class HomePage extends Component {
         if(position===0){
             navigate("Day1");
         }
+        if(position===1){
+            navigate("MyDrawer")
+        }
     }
 }
 
