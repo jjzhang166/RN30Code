@@ -22,7 +22,7 @@ import MyPage from './page/MyPage';
 import NavigationPage from './page/day10/NavigationPage';
 import NavigationOne from './page/day10/NavigationOne';
 import NavigationTwo from './page/day10/NavigationTwo';
-import NavigationDetail from './page/day10/NavigationDetail ';
+import NavigationDetail from './page/day10/NavigationDetail';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
 import Day2 from './page/day2/Day2'
