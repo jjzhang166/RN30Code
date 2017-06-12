@@ -20,6 +20,9 @@ import TabBarItem from './component/TabBarItem';
 import HomePage from './page/HomePage';
 import MyPage from './page/MyPage';
 import NavigationPage from './page/day10/NavigationPage';
+import NavigationOne from './page/day10/NavigationOne';
+import NavigationTwo from './page/day10/NavigationTwo';
+import NavigationDetail from './page/day10/NavigationDetail ';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
 import Day2 from './page/day2/Day2'
@@ -40,7 +43,7 @@ const MyTab = TabNavigator({
         HomePage: {
             screen: HomePage,
             navigationOptions: {
-                headerTitle: '30 Days of React-Native',
+                headerTitle:'30 Days of React-Native',
                 tabBarLabel: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -54,7 +57,7 @@ const MyTab = TabNavigator({
         MyPage: {
             screen: MyPage,
             navigationOptions: {
-                headerTitle: '30 Days of React-Native',
+                headerTitle:'30 Days of React-Native',
                 tabBarLabel: '我的',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
@@ -119,79 +122,95 @@ const MyDrawer = DrawerNavigator({
         screen: NavigationPage,
         navigationOptions: {
             gesturesEnabled: true,
-            drawerLabel: 'Home',
+            drawerLabel: '总览',
+            headerTitle:'NBA Final',
         }
-    }
+    },
+    NavigationOne:{
+        screen:NavigationOne,
+        navigationOptions: {
+            gesturesEnabled: true,
+            drawerLabel: '骑士',
+            headerTitle:'骑士',
+        }
+    },
+    NavigationTwo:{
+        screen:NavigationTwo,
+        navigationOptions: {
+            gesturesEnabled: true,
+            drawerLabel: '勇士',
+            headerTitle:'勇士',
+        }
+    },
 })
 
 const MyApp = StackNavigator({
     MyTab: {
         screen: MyTab,
-        navigationOptions: {
-            headerTitleStyle: {alignSelf: 'center'}
-        }
     },
-    MyDrawer: {
+	MyDrawer: {
         screen: MyDrawer,
         navigationOptions: {
-            header: null,
+            gesturesEnabled: true,           
         }
     },
-    Day1: {
-        screen: Day1,
-        navigationOptions: {
-            headerTitle: '第一天',
-        }
-    },
-    Day2: {
-        screen: Day2,
-        navigationOptions: {
-            headerTitle: '第二天',
-        }
-    },
-    Day3: {
-        screen: Day3,
-        navigationOptions: {
-            headerTitle: '第三天',
-        }
-    },
-    Day4: {
-        screen: Day4,
-        navigationOptions: {
-            headerTitle: '第四天',
-        }
-    },
-    Day5: {
-        screen: Day5,
-        navigationOptions: {
-            headerTitle: '第五天',
-        }
-    },
-    Day6: {
-        screen: Day6,
+    Day1:{
+        screen:Day1,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle: '第六天',
+            headerTitle:'第一天',
         }
     },
-    Day7: {
-        screen: Day7,
+    Day2:{
+        screen:Day2,
         navigationOptions: {
-            headerTitle: '第七天',
+            gesturesEnabled: true,
+            headerTitle:'第二天',
         }
     },
-    Day8: {
-        screen: Day8,
+    Day3:{
+        screen:Day3,
         navigationOptions: {
-            headerTitle: '第八天',
+            gesturesEnabled: true,
+            headerTitle:'第三天',
+        }
+    },
+    Day4:{
+        screen:Day4,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第四天',
+        }
+    },
+    Day5:{
+        screen:Day5,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第五天',
+        }
+    },
+    Day6:{
+        screen:Day6,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第六天',
+        }
+    },
+    Day7:{
+        screen:Day7,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第七天',
+        }
+    },
+    Day8:{
+        screen:Day8,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第八天',
         }
     },
 }, {
-    navigationOptions: {
-       // header:null,
-        gesturesEnabled: true,
-        headerStyle:{elevation: 1}
-    },
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
     headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏
     transitionConfig: () => ({
