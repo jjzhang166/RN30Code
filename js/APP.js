@@ -20,6 +20,9 @@ import TabBarItem from './component/TabBarItem';
 import HomePage from './page/HomePage';
 import MyPage from './page/MyPage';
 import NavigationPage from './page/day10/NavigationPage';
+import NavigationOne from './page/day10/NavigationOne';
+import NavigationTwo from './page/day10/NavigationTwo';
+import NavigationDetail from './page/day10/NavigationDetail';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
 import Day1 from './page/day1/Day1'
 import Day2 from './page/day2/Day2'
@@ -119,9 +122,26 @@ const MyDrawer = DrawerNavigator({
         screen: NavigationPage,
         navigationOptions: {
             gesturesEnabled: true,
-            drawerLabel: 'Home',
+            drawerLabel: '总览',
+            headerTitle:'NBA Final',
         }
-    }
+    },
+    NavigationOne:{
+        screen:NavigationOne,
+        navigationOptions: {
+            gesturesEnabled: true,
+            drawerLabel: '骑士',
+            headerTitle:'骑士',
+        }
+    },
+    NavigationTwo:{
+        screen:NavigationTwo,
+        navigationOptions: {
+            gesturesEnabled: true,
+            drawerLabel: '勇士',
+            headerTitle:'勇士',
+        }
+    },
 })
 
 const MyApp = StackNavigator({
@@ -131,8 +151,7 @@ const MyApp = StackNavigator({
 	MyDrawer: {
         screen: MyDrawer,
         navigationOptions: {
-            gesturesEnabled: true,
-            header:null,
+            gesturesEnabled: true,           
         }
     },
     Day1:{

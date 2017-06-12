@@ -14,9 +14,8 @@ import {
 import px2dp from '../../utils/px2dp';
 import theme from '../../config/theme';
 import PageComponent from '../../component/BackPageComponent';
-import { NavigationActions } from 'react-navigation'
 
-export default class AboutPage extends PageComponent {
+export default class NavigationPage extends PageComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,21 +25,31 @@ export default class AboutPage extends PageComponent {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.actionBar} >
-                    <TouchableOpacity style={{ height: theme.actionBar.height, width: px2dp(80), justifyContent: 'center', alignItems: 'center' }} onPress={this._handleBackHome.bind(this)}>
-                        <Image source={require("../../image/back.png")} />
-                    </TouchableOpacity>
-                    <Text style={{ flex: 1, textAlign: 'center', color: theme.actionBar.fontColor, fontSize: theme.actionBar.fontSize }}>Navigation使用方法</Text>
-                    <View style={{ height: theme.actionBar.height, width: px2dp(80) }} />
+                <View style={{ height: px2dp(600), flexDirection: 'row', alignItems: 'center', borderBottomWidth: 2 / PixelRatio.get(), borderBottomColor: '#c4c4c4' }}>
+                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                        <Image source={require('../../image/Day10/cleve.png')} />
+                        <Text style={{ fontSize: px2dp(60), color: 'red' }}>1</Text>
+                        <Text style={styles.text}>胜51负31东部第2</Text>
+                    </View>
+                    <Text style={{ fontSize: px2dp(60), color: '#000' }}>VS</Text>
+                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                        <Image source={require('../../image/Day10/golden.png')} />
+                        <Text style={{ fontSize: px2dp(60), color: 'red' }}>3</Text>
+                        <Text style={styles.text}>胜67负15西部第1</Text>
+                    </View>
+                </View>
+                <View style={{height:px2dp(100),justifyContent:'center',alignItems:'center', borderBottomWidth: 2 / PixelRatio.get(), borderBottomColor: '#c4c4c4' }}>
+                    <Text style={{fontSize:px2dp(40),color:'#000'}}>比赛赛程</Text>
+                </View>
+                <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+                    <Text style={styles.text}>06/02 91-113</Text>
+                    <Text style={styles.text}>06/05 113-132</Text>
+                    <Text style={styles.text}>06/08 113-118</Text>
+                    <Text style={styles.text}>06/10 137-116</Text>
+                    <Text style={styles.text}>06/13 未开赛</Text>
                 </View>
             </View>
         );
-    }
-
-    _handleBackHome() {
-        const backAction = NavigationActions.back({
-        })
-        this.props.navigation.dispatch(backAction)
     }
 
 }
@@ -58,5 +67,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderBottomWidth: 2 / PixelRatio.get(),
         borderBottomColor: '#c4c4c4'
+    },
+    text: {
+        fontSize: px2dp(26),
+        color: '#000',
+        marginTop: px2dp(12)
     }
 });
