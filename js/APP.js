@@ -154,7 +154,7 @@ const MyApp = StackNavigator({
 	MyDrawer: {
         screen: MyDrawer,
         navigationOptions: {
-            gesturesEnabled: true,           
+            gesturesEnabled: true,
         }
     },
     NavigationDetail:{
@@ -174,7 +174,6 @@ const MyApp = StackNavigator({
         screen:Day2,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第二天',
         }
     },
     Day3:{

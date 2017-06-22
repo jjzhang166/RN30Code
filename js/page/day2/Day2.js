@@ -15,6 +15,7 @@ class Counter extends Component {
 
     render() {
         const {count} = this.state
+
         const {color, size} = this.props
 
         return (
