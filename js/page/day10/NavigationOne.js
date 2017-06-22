@@ -9,14 +9,14 @@ import {
     Platform,
     ScrollView,
     PixelRatio,
+    Alert,
     TouchableNativeFeedback,
     TouchableOpacity
 } from 'react-native';
 import px2dp from '../../utils/px2dp';
 import theme from '../../config/theme';
-import PageComponent from '../../component/BackPageComponent';
 
-export default class NavigationOne extends PageComponent {
+export default class NavigationOne extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -49,21 +49,21 @@ export default class NavigationOne extends PageComponent {
                 <Text style={{ fontSize: px2dp(30), color: 'blue', paddingLeft: px2dp(30), paddingTop: px2dp(20) }}>主力球员</Text>
                 <View style={{ paddingBottom: px2dp(100) }}>
                     <View style={{ height: px2dp(200), flexDirection: 'row', alignItems: 'center', marginTop: px2dp(12) }}>
-                        <TouchableOpacity style={styles.imageContainer}>
+                        <TouchableOpacity style={styles.imageContainer} onPress={this._itemPressed.bind(this, 0)}>
                             <Image style={styles.circleImage} source={require('../../image/Day10/cleve1.png')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.imageContainer}>
+                        <TouchableOpacity style={styles.imageContainer} onPress={this._itemPressed.bind(this, 1)}>
                             <Image style={styles.circleImage} source={require('../../image/Day10/cleve2.png')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.imageContainer}>
+                        <TouchableOpacity style={styles.imageContainer} onPress={this._itemPressed.bind(this, 2)}>
                             <Image style={styles.circleImage} source={require('../../image/Day10/cleve3.png')} />
                         </TouchableOpacity>
                     </View>
                     <View style={{ height: px2dp(200), flexDirection: 'row', alignItems: 'center', marginTop: px2dp(12) }}>
-                        <TouchableOpacity style={styles.imageContainer}>
+                        <TouchableOpacity style={styles.imageContainer} onPress={this._itemPressed.bind(this, 3)}>
                             <Image style={styles.circleImage} source={require('../../image/Day10/cleve4.png')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.imageContainer}>
+                        <TouchableOpacity style={styles.imageContainer} onPress={this._itemPressed.bind(this, 4)}>
                             <Image style={styles.circleImage} source={require('../../image/Day10/cleve5.png')} />
                         </TouchableOpacity>
                         <View style={{ flex: 1 }} />
@@ -73,20 +73,29 @@ export default class NavigationOne extends PageComponent {
         );
     }
 
+    _itemPressed(index) {
+        switch (index) {
+            case 0:
+                this.props.navigation.navigate('NavigationDetail', { id: 0 })
+                break;
+            case 1:
+                this.props.navigation.navigate('NavigationDetail', { id: 1 })
+                break;
+            case 2:
+                Alert.alert('暂无欧文的数据')
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
+    }
+
 }
 
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#fff'
-    },
-    actionBar: {
-        height: theme.actionBar.height,
-        backgroundColor: theme.actionBar.backgroundColor,
-        paddingTop: (Platform.OS === 'ios') ? px2dp(35) : 0,
-        flexDirection: 'row',
-        alignItems: 'center',
-        borderBottomWidth: 2 / PixelRatio.get(),
-        borderBottomColor: '#c4c4c4'
     },
     text: {
         fontSize: px2dp(26),

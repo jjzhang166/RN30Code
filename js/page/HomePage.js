@@ -87,7 +87,10 @@ export default class HomePage extends Component {
             case 7:
                 navigate("Day8");
                 break;
-            case 10:
+            case 8:
+                navigate("Day9");
+                break;
+            case 9:
                 navigate("MyDrawer");
                 break;
             default:

@@ -32,6 +32,7 @@ import Day5 from './page/day5/Day5'
 import Day6 from './page/day6/Day6'
 import Day7 from './page/day7/Day7'
 import Day8 from './page/day8/Day8'
+import Day9 from './page/day9/Day9'
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -142,6 +143,8 @@ const MyDrawer = DrawerNavigator({
             headerTitle:'勇士',
         }
     },
+},{
+    drawerWidth:200
 })
 
 const MyApp = StackNavigator({
@@ -152,6 +155,12 @@ const MyApp = StackNavigator({
         screen: MyDrawer,
         navigationOptions: {
             gesturesEnabled: true,           
+        }
+    },
+    NavigationDetail:{
+        screen:NavigationDetail,
+        nanavigationOptions: {
+            gesturesEnabled: true,         
         }
     },
     Day1:{
@@ -208,6 +217,13 @@ const MyApp = StackNavigator({
         navigationOptions: {
             gesturesEnabled: true,
             headerTitle:'第八天',
+        }
+    },
+    Day9:{
+        screen:Day9,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'第九天',
         }
     },
 }, {
