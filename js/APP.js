@@ -24,15 +24,17 @@ import NavigationOne from './page/day10/NavigationOne';
 import NavigationTwo from './page/day10/NavigationTwo';
 import NavigationDetail from './page/day10/NavigationDetail';
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator';
-import Day1 from './page/day1/Day1'
-import Day2 from './page/day2/Day2'
-import Day3 from './page/day3/Day3'
-import Day4 from './page/day4/Day4'
-import Day5 from './page/day5/Day5'
-import Day6 from './page/day6/Day6'
-import Day7 from './page/day7/Day7'
-import Day8 from './page/day8/Day8'
-import Day9 from './page/day9/Day9'
+import Day1 from './page/day1/Day1';
+import Day2 from './page/day2/Day2';
+import Day3 from './page/day3/Day3';
+import Day4 from './page/day4/Day4';
+import Day5 from './page/day5/Day5';
+import Day6 from './page/day6/Day6';
+import Day7 from './page/day7/Day7';
+import Day8 from './page/day8/Day8';
+import Day9 from './page/day9/Day9';
+import LoginPage from './page/day11/LoginPage';
+import SignUpPage from './page/day11/SignUpPage';
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -223,9 +225,23 @@ const MyApp = StackNavigator({
         screen:Day9,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第九天',
+            headerTitle:'热门电影',
         }
     },
+    LoginPage:{
+        screen:LoginPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'登录',
+        }
+    },
+    SignUpPage:{
+        screen:SignUpPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'注册',
+        }
+    }
 }, {
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
     headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏

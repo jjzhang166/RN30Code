@@ -93,6 +93,9 @@ export default class HomePage extends Component {
             case 9:
                 navigate("MyDrawer");
                 break;
+            case 10:
+                navigate("LoginPage");
+                break;
             default:
         }
     }
