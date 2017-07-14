@@ -81,11 +81,11 @@ export default class LoginPage extends Component {
     }
 
     _ForgetButtonCallback() {
-
+        //在这里执行找回密码的操作
     }
 
     _LoginButtonCallback() {
-
+        //在这里调用登录接口
     }
 
     _SignUpButtonCallback() {

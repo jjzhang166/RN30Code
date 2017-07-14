@@ -18,11 +18,16 @@ import theme from '../../config/theme';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 var clickTime = 0;
+var codeTime = 20;
 
 export default class SignUpPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            color: 'red',
+            textColor: '#fff',
+            timerCount: codeTime,
+            timerTitle: true,
             account: '',
             pass: '',
             passAg: '',
@@ -140,8 +145,8 @@ export default class SignUpPage extends Component {
                                     onChangeText={(code) => this.setState({ code })} />
                             </View>
                         </View>
-                        <TouchableOpacity style={styles.search_btn} onPress={this._CodeButtonCallback.bind(this)}>
-                            <Text style={{ color: '#fff', fontSize: px2dp(20), padding: px2dp(18) }}>获取验证码</Text>
+                        <TouchableOpacity style={[styles.code_btn, { backgroundColor: this.state.color }]} onPress={this._CodeButtonCallback.bind(this)}>
+                            <Text style={{ color: this.state.textColor, fontSize: px2dp(26), padding: px2dp(18) }}>{this.state.timerTitle ? '获取验证码' : this.state.timerCount + 'S'}</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={{ flex: 1 }} />
@@ -157,13 +162,36 @@ export default class SignUpPage extends Component {
 
     _CodeButtonCallback() {
         //在这个调用发送验证码的接口
+        if (this.state.timerTitle == true) {
+            this.setState({
+                color: 'grey',
+                textColor: '#000',
+                timerTitle: false
+            })
+            this.interval = setInterval(() => {
+                var timer = this.state.timerCount - 1
+                if (timer === 0) {
+                    this.interval && clearInterval(this.interval);
+                    this.setState({
+                        timerCount: codeTime,
+                        timerTitle: true,
+                        color: 'red',
+                        textColor: '#fff'
+                    })
+                } else {
+                    this.setState({
+                        timerCount: timer,
+                    })
+                }
+            }, 1000)
+        }
     }
 
     _SignUpButtonCallback() {
         let currentTime = new Date().getTime();
         if (currentTime - clickTime > 1000) {
             clickTime = currentTime;
-            if (this.checkAccount()&this.checkPass()&this.checkPassAg()&this.checkId()) {
+            if (this.checkAccount() & this.checkPass() & this.checkPassAg() & this.checkId()) {
                 Alert.alert(
                     '提示',
                     "注册成功",
@@ -265,9 +293,9 @@ const styles = StyleSheet.create({
         fontSize: px2dp(24),
         color: theme.darkColor,
     },
-    search_btn: {
-        backgroundColor: 'red',
+    code_btn: {
         marginLeft: px2dp(12),
+        width: px2dp(200),
         alignItems: 'center',
         justifyContent: 'center'
     },
