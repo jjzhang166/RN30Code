@@ -6,14 +6,14 @@ import {
 } from 'react-navigation';
 
 import React from 'react';
+import Storage from 'react-native-storage';
 
 import {
-    Image,
-    StyleSheet,
-    Text,
     Platform,
     AsyncStorage,
-    PixelRatio
+    PixelRatio,
+    Text,
+    TouchableOpacity
 } from 'react-native';
 import theme from './config/theme';
 import TabBarItem from './component/TabBarItem';
@@ -35,12 +35,30 @@ import Day8 from './page/day8/Day8';
 import Day9 from './page/day9/Day9';
 import LoginPage from './page/day11/LoginPage';
 import SignUpPage from './page/day11/SignUpPage';
+import ContactPage ,{getNavigation} from './page/day12/ContactPage';
+import DetailPage from './page/day12/DetailPage'
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
 // 系统是安卓
 global.Android = (Platform.OS === 'android');
 
+let storage = new Storage({
+    // 最大容量，默认值1000条数据循环存储
+    size: 1000,
+
+    // 存储引擎：对于RN使用AsyncStorage，对于web使用window.localStorage
+    // 如果不指定则数据只会保存在内存中，重启后即丢失
+    storageBackend: AsyncStorage,
+
+    // 数据过期时间，默认一整天（1000 * 3600 * 24 毫秒），设为null则永不过期
+    defaultExpires: null,
+
+    // 读写时在内存中缓存数据。默认启用。
+    enableCache: true,
+})
+
+global.storage = storage;
 
 const MyTab = TabNavigator({
         HomePage: {
@@ -240,7 +258,24 @@ const MyApp = StackNavigator({
             gesturesEnabled: true,
             headerTitle:'注册',
         }
-    }
+    },
+    ContactPage:{
+        screen:ContactPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'通讯录',
+            headerRight:(<TouchableOpacity style={{paddingRight:8}} onPress={()=>{getNavigation().navigate('DetailPage')}}>
+                <Text>新联系人</Text>
+            </TouchableOpacity>),
+        }
+    },
+    DetailPage:{
+        screen:DetailPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'联系人信息',
+        }
+    },
 }, {
     mode: 'card',// 页面切换模式, 左右是card(相当于iOS中的push效果), 上下是modal(相当于iOS中的modal效果)
     headerMode: 'screen',//// 导航栏的显示模式, screen: 有渐变透明效果, float: 无透明效果, none: 隐藏导航栏

@@ -96,6 +96,8 @@ export default class HomePage extends Component {
             case 10:
                 navigate("LoginPage");
                 break;
+            case 11:
+                navigate("ContactPage");
             default:
         }
     }

@@ -1,7 +1,6 @@
-// /js/page/day1/Day1.js
-import React, { Component } from 'react';//从React中导入依赖
-import { //从React Native依赖中导入
-    AppRegistry,
+
+import React, { Component } from 'react';
+import {
     StyleSheet,
     Text,
     View

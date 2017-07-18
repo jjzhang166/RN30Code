@@ -7,10 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "js-pinyin": "^0.1.9",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-native-keyboard-aware-scroll-view": "^0.2.9",
     "react-native-picker": "^4.0.18",
+    "react-native-storage": "^0.2.2",
     "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {

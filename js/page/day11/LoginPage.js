@@ -9,6 +9,7 @@ import {
     TextInput,
     Platform,
     PixelRatio,
+    Alert,
     TouchableNativeFeedback,
     TouchableOpacity
 } from 'react-native';
@@ -82,10 +83,12 @@ export default class LoginPage extends Component {
 
     _ForgetButtonCallback() {
         //在这里执行找回密码的操作
+        Alert.alert('忘记密码');
     }
 
     _LoginButtonCallback() {
         //在这里调用登录接口
+        Alert.alert('登录');
     }
 
     _SignUpButtonCallback() {
