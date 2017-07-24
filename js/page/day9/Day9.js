@@ -106,7 +106,7 @@ export default class Day9 extends Component {
                 </TouchableOpacity>
                 <Image style={{ height: px2dp(1100), marginTop: px2dp(8) }} source={{ uri: this.state.image }} resizeMode='cover' onLoadStart={this._loadStart.bind(this)} onLoad={this._load.bind(this)} />
                 {this.state.loading ?
-                    <View style={{ position: 'absolute', left: px2dp(300), top: px2dp(600), justifyContent: 'center', alignItems: 'center' }}>
+                    <View style={{ position: 'absolute', left: theme.screenWidth/2-50, top: theme.screenHeight/2-50, justifyContent: 'center', alignItems: 'center' ,backgroundColor:'#fff',padding:px2dp(30),borderRadius:px2dp(5)}}>
                         <Image source={require('../../image/Day9/loading.gif')} />
                         <Text style={{ marginTop: px2dp(20) }}>图片加载中...</Text>
                     </View>

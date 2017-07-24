@@ -229,7 +229,7 @@ const MyApp = StackNavigator({
         screen:Day7,
         navigationOptions: {
             gesturesEnabled: true,
-            headerTitle:'第七天',
+            headerTitle:'相册',
         }
     },
     Day8:{
