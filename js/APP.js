@@ -194,6 +194,7 @@ const MyApp = StackNavigator({
         screen:Day2,
         navigationOptions: {
             gesturesEnabled: true,
+            headerTitle:'状态机和属性',
         }
     },
     Day3:{

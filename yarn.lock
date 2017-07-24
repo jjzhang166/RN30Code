@@ -2192,6 +2192,10 @@ joi@^6.6.1:
     moment "2.x.x"
     topo "1.x.x"
 
+js-pinyin@^0.1.9:
+  version "0.1.9"
+  resolved "http://registry.npm.taobao.org/js-pinyin/download/js-pinyin-0.1.9.tgz#cdf19335645ddb20d4630df1058aac25d256adfd"
+
 js-tokens@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/js-tokens/download/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
@@ -2979,6 +2983,10 @@ react-native-keyboard-aware-scroll-view@^0.2.9:
 react-native-picker@^4.0.18:
   version "4.0.18"
   resolved "http://registry.npm.taobao.org/react-native-picker/download/react-native-picker-4.0.18.tgz#cd75244bb7819e29c2910171120e62be8bf690fb"
+
+react-native-storage@^0.2.2:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/react-native-storage/download/react-native-storage-0.2.2.tgz#4449197f122b2da0650e3704e1f050260ed58d9f"
 
 react-native-tab-view@^0.0.65:
   version "0.0.65"
