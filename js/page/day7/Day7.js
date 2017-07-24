@@ -51,7 +51,7 @@ export default class Day7 extends Component {
         this.setState({ progress });
         setTimeout(() => {
             this.setState({ indeterminate: false });
-            setInterval(() => {
+            this.timer=setInterval(() => {
                 progress += Math.random() / 5;
                 if (progress > 1) {
                     progress = 1;
@@ -60,7 +60,9 @@ export default class Day7 extends Component {
             }, 500);
         }, 1500);
     }
-
+    componentWillUnmount() {
+        this.timer && clearInterval(this.timer);
+    }
     render() {
         return (
             <View style={styles.container}>
