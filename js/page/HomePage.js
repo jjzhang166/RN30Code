@@ -98,6 +98,9 @@ export default class HomePage extends Component {
                 break;
             case 11:
                 navigate("ContactPage");
+                break;
+            case 12:
+                navigate("TodayHeader")
             default:
         }
     }

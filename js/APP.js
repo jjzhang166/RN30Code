@@ -36,7 +36,8 @@ import Day9 from './page/day9/Day9';
 import LoginPage from './page/day11/LoginPage';
 import SignUpPage from './page/day11/SignUpPage';
 import ContactPage ,{getNavigation} from './page/day12/ContactPage';
-import DetailPage from './page/day12/DetailPage'
+import DetailPage from './page/day12/DetailPage';
+import TodayHeader from './page/day13/TodayHeader';
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -275,6 +276,13 @@ const MyApp = StackNavigator({
         navigationOptions: {
             gesturesEnabled: true,
             headerTitle:'联系人信息',
+        }
+    },
+    TodayHeader:{
+        screen:TodayHeader,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'今日头条标签栏',
         }
     },
 }, {

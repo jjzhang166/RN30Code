@@ -11,6 +11,7 @@ import {
 import px2dp from '../../utils/px2dp';
 import theme from '../../config/theme';
 import ImagePicker from 'react-native-image-crop-picker';
+import ActionSheet from 'react-native-actionsheet';
 
 const widthPic = (theme.screenWidth - px2dp(50)) / 4;
 
@@ -22,6 +23,7 @@ export default class Day6 extends Component {
             chooseState: false,
             picked:0
         }
+        this.handlePress = this.handlePress.bind(this);
     }
 
     render() {
@@ -47,6 +49,12 @@ export default class Day6 extends Component {
                         <Text style={{color:this.state.picked===0?'grey':'red'}}>{'删除选中条目('+this.state.picked+')'}</Text>
                     </TouchableOpacity>
                     : null}
+                <ActionSheet
+                    ref={o => this.ActionSheet = o}
+                    options={['取消', '拍摄并剪切一张照片', '从相册选取并剪切一张照片', '从相册选取多张照片']}
+                    cancelButtonIndex={0}
+                    onPress={this.handlePress}
+                />
             </View>
         );
     }
@@ -85,6 +93,7 @@ export default class Day6 extends Component {
         }
     }
 
+    //设置header
     static navigationOptions = ({navigation}) => {
         const {params = {}} = navigation.state;
         return {
@@ -94,6 +103,7 @@ export default class Day6 extends Component {
         };
     };
 
+    //header里按钮的点击事件
     _saveDetails() {
         let currentState = !this.state.chooseState;
         if (currentState) {
@@ -116,6 +126,24 @@ export default class Day6 extends Component {
         this.props.navigation.setParams({handleSave: this._saveDetails.bind(this), chooseState: false});
     }
 
+    //ActionSheet点击事件
+    handlePress(index) {
+        switch (index) {
+            case 0:  //取消
+                break;
+            case 1:
+                this._addCamera();
+                break;
+            case 2:
+                this._addOnePress();
+                break;
+            case 3:
+                this._addMultiPress();
+                break;
+        }
+    }
+
+    //在编辑状态下每张图片的点击事件
     _picPress(index) {
         if (this.state.chooseState) {
             let currentList = this.state.listdata;
@@ -133,7 +161,49 @@ export default class Day6 extends Component {
         }
     }
 
-    _addPress() {
+    //添加图片按钮的点击事件-弹出ActionSheet
+    _addPress(){
+        this.ActionSheet.show()
+    }
+
+    //从相机添加并裁剪一张图片，大小为400/400
+    _addCamera(){
+        let currentList = this.state.listdata;
+        ImagePicker.openCamera({
+            width: 400,
+            height: 400,
+            cropping: true
+        }).then(image => {
+            console.log(image);
+            let item = {path: {uri: ''}, checked: false};
+            item.path.uri = image.path;
+            currentList.splice(currentList.length - 1, 0, item)
+            this.setState({
+                listdata: currentList
+            })
+        });
+    }
+
+    //从相册添加并裁剪一张图片，大小为400/400
+    _addOnePress(){
+        let currentList = this.state.listdata;
+        ImagePicker.openPicker({
+            width: 400,
+            height: 400,
+            cropping: true
+        }).then(image => {
+            console.log(image);
+            let item = {path: {uri: ''}, checked: false};
+            item.path.uri = image.path;
+            currentList.splice(currentList.length - 1, 0, item)
+            this.setState({
+                listdata: currentList
+            })
+        });
+    }
+
+    //从相册一次添加多张图片
+    _addMultiPress() {
         let currentList = this.state.listdata;
         ImagePicker.openPicker({
             multiple: true
@@ -150,6 +220,7 @@ export default class Day6 extends Component {
         });
     }
 
+    //删除选中条目的点击事件
     _deleteItem(){
         let currentList=this.state.listdata;
         for(let i=0;i<currentList.length;i++){
