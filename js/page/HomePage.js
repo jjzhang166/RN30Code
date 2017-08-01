@@ -100,7 +100,11 @@ export default class HomePage extends Component {
                 navigate("ContactPage");
                 break;
             case 12:
-                navigate("TodayHeader")
+                navigate("TodayHeader");
+                break;
+            case 13:
+                navigate("VideoPlayer");
+                break;
             default:
         }
     }

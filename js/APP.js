@@ -38,6 +38,7 @@ import SignUpPage from './page/day11/SignUpPage';
 import ContactPage ,{getNavigation} from './page/day12/ContactPage';
 import DetailPage from './page/day12/DetailPage';
 import TodayHeader from './page/day13/TodayHeader';
+import VideoPlayer from './page/day14/VideoPlayer';
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -283,6 +284,13 @@ const MyApp = StackNavigator({
         navigationOptions: {
             gesturesEnabled: true,
             headerTitle:'今日头条标签栏',
+        }
+    },
+    VideoPlayer:{
+        screen:VideoPlayer,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'视频播放',
         }
     },
 }, {
