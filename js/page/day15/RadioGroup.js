@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import {
     Text, View, StyleSheet, Image,
-    TouchableOpacity, FlatList
+    TouchableOpacity
 } from 'react-native';
 import px2dp from "../../utils/px2dp";
 
@@ -32,26 +32,7 @@ class RadioGroup extends Component {
                         )
                     })}
                 </View>
-                <FlatList
-                    data={this.state.listdata}
-                    renderItem={this._renderNameComponent}
-                    keyExtractor={(item, index) => index}/>
             </View>
-        );
-    }
-
-    _renderNameComponent = ({item,index}) => {
-        return (
-            <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center',padding:px2dp(8)}}
-                              onPress={this._btnClick.bind(this, index)}>
-                {item.select ?
-                    <Image
-                        source={require('./image/radio_s.png')}/>
-                    :
-                    null
-                }
-                <Text style={{marginLeft:px2dp(8)}}>{item.title}</Text>
-            </TouchableOpacity>
         );
     }
 
