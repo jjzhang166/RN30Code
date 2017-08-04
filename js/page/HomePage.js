@@ -105,6 +105,9 @@ export default class HomePage extends Component {
             case 13:
                 navigate("VideoPlayer");
                 break;
+            case 14:
+                navigate("CustomPage");
+                break;
             default:
         }
     }

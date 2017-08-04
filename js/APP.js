@@ -39,6 +39,7 @@ import ContactPage ,{getNavigation} from './page/day12/ContactPage';
 import DetailPage from './page/day12/DetailPage';
 import TodayHeader from './page/day13/TodayHeader';
 import VideoPlayer from './page/day14/VideoPlayer';
+import CustomPage from './page/day15/CustomPage';
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -291,6 +292,13 @@ const MyApp = StackNavigator({
         navigationOptions: {
             gesturesEnabled: true,
             headerTitle:'视频播放',
+        }
+    },
+    CustomPage:{
+        screen:CustomPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'自定义组件',
         }
     },
 }, {
