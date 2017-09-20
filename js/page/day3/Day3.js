@@ -12,10 +12,10 @@ export default class Day3 extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    欢迎阅读这本书! {/*修改了此处代码*/}
+                    欢迎打开这个Demo! {/*修改了此处代码*/}
                 </Text>
                 <Text style={styles.instructions}>{/*修改了此处代码*/}
-                    这本书由浅入深,循序渐进的介绍React Native相关知识.
+                    这个Demo由浅入深,循序渐进的展示React Native相关知识.
                 </Text>
                 <Text style={styles.instructions}>
                     让我们开始吧! {/*修改了此处代码*/}
