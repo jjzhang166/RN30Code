@@ -11,6 +11,7 @@
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-native-actionsheet": "^2.2.0",
+    "react-native-charts-wrapper": "^0.2.10",
     "react-native-baidu-map": "^0.6.0",
     "react-native-datepicker": "^1.6.0",
     "react-native-image-crop-picker": "^0.14.1",

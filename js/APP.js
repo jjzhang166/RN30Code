@@ -40,6 +40,7 @@ import DetailPage from './page/day12/DetailPage';
 import TodayHeader from './page/day13/TodayHeader';
 import VideoPlayer from './page/day14/VideoPlayer';
 import CustomPage from './page/day15/CustomPage';
+import ChartPage from './page/day16/ChartPage'
 
 // 系统是iOS
 global.iOS = (Platform.OS === 'ios');
@@ -299,6 +300,13 @@ const MyApp = StackNavigator({
         navigationOptions: {
             gesturesEnabled: true,
             headerTitle:'自定义组件',
+        }
+    },
+    ChartPage:{
+        screen:ChartPage,
+        navigationOptions: {
+            gesturesEnabled: true,
+            headerTitle:'图表',
         }
     },
 }, {

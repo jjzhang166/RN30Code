@@ -3,6 +3,7 @@ package com.rn30code;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.github.wuxudong.rncharts.MPAndroidChartPackage;
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
@@ -27,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new MPAndroidChartPackage(),
             new BaiduMapPackage(getApplicationContext()),
             new ReactVideoPackage(),
             new PickerPackage(),

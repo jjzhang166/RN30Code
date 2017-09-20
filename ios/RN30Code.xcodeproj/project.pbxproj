@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -22,7 +21,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		1D89663A73F04BA1910756EE /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE3BA97636B4AF68B58A67C /* libRCTVideo.a */; };
 		2741D87A1F25EB05009F2427 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2741D85E1F25EAFA009F2427 /* libART.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -40,12 +38,57 @@
 		5DAD3E6835564081AC3254AF /* libRCTBEEPickerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 672A9555D57349C593E8B0F0 /* libRCTBEEPickerManager.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8D743DCAC6CD44738A93FACC /* libRCTBaiduMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B46C67DFBD0484FA28DFE5E /* libRCTBaiduMap.a */; };
 		8E93A9911F205F05006403A0 /* ImageCropPickerSDK in Resources */ = {isa = PBXBuildFile; fileRef = 8E93A9901F205F05006403A0 /* ImageCropPickerSDK */; };
 		8E93A9931F206017006403A0 /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93A9921F206017006403A0 /* RSKImageCropper.framework */; };
 		8E93A9941F206017006403A0 /* RSKImageCropper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93A9921F206017006403A0 /* RSKImageCropper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E93A9961F206017006403A0 /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93A9951F206017006403A0 /* QBImagePicker.framework */; };
 		8E93A9971F206017006403A0 /* QBImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E93A9951F206017006403A0 /* QBImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8ECA8CEE1F4697B900CFDF38 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CB41F4697B900CFDF38 /* BalloonMarker.swift */; };
+		8ECA8CEF1F4697B900CFDF38 /* BarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CB61F4697B900CFDF38 /* BarDataExtract.swift */; };
+		8ECA8CF01F4697B900CFDF38 /* RNBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CB71F4697B900CFDF38 /* RNBarChartManager.swift */; };
+		8ECA8CF11F4697B900CFDF38 /* RNBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CB81F4697B900CFDF38 /* RNBarChartManagerBridge.m */; };
+		8ECA8CF21F4697B900CFDF38 /* RNBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CB91F4697B900CFDF38 /* RNBarChartView.swift */; };
+		8ECA8CF31F4697B900CFDF38 /* RNBarChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CBA1F4697B900CFDF38 /* RNBarChartViewBase.swift */; };
+		8ECA8CF41F4697B900CFDF38 /* RNHorizontalBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CBB1F4697B900CFDF38 /* RNHorizontalBarChartManager.swift */; };
+		8ECA8CF51F4697B900CFDF38 /* RNHorizontalBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CBC1F4697B900CFDF38 /* RNHorizontalBarChartManagerBridge.m */; };
+		8ECA8CF61F4697B900CFDF38 /* RNHorizontalBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CBD1F4697B900CFDF38 /* RNHorizontalBarChartView.swift */; };
+		8ECA8CF71F4697B900CFDF38 /* BubbleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CBF1F4697B900CFDF38 /* BubbleDataExtract.swift */; };
+		8ECA8CF81F4697B900CFDF38 /* RNBubbleChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC01F4697B900CFDF38 /* RNBubbleChartManager.swift */; };
+		8ECA8CF91F4697B900CFDF38 /* RNBubbleChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC11F4697B900CFDF38 /* RNBubbleChartManagerBridge.m */; };
+		8ECA8CFA1F4697B900CFDF38 /* RNBubbleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC21F4697B900CFDF38 /* RNBubbleChartView.swift */; };
+		8ECA8CFB1F4697B900CFDF38 /* CandleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC41F4697B900CFDF38 /* CandleDataExtract.swift */; };
+		8ECA8CFC1F4697B900CFDF38 /* RNCandleStickChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC51F4697B900CFDF38 /* RNCandleStickChartManager.swift */; };
+		8ECA8CFD1F4697B900CFDF38 /* RNCandleStickChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC61F4697B900CFDF38 /* RNCandleStickChartManagerBridge.m */; };
+		8ECA8CFE1F4697B900CFDF38 /* RNCandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC71F4697B900CFDF38 /* RNCandleStickChartView.swift */; };
+		8ECA8CFF1F4697B900CFDF38 /* CombinedDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CC91F4697B900CFDF38 /* CombinedDataExtract.swift */; };
+		8ECA8D001F4697B900CFDF38 /* RNCombinedChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CCA1F4697B900CFDF38 /* RNCombinedChartManager.swift */; };
+		8ECA8D011F4697B900CFDF38 /* RNCombinedChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CCB1F4697B900CFDF38 /* RNCombinedChartManagerBridge.m */; };
+		8ECA8D021F4697B900CFDF38 /* RNCombinedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CCC1F4697B900CFDF38 /* RNCombinedChartView.swift */; };
+		8ECA8D031F4697B900CFDF38 /* DataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CCD1F4697B900CFDF38 /* DataExtract.swift */; };
+		8ECA8D041F4697B900CFDF38 /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CCF1F4697B900CFDF38 /* LargeValueFormatter.swift */; };
+		8ECA8D051F4697B900CFDF38 /* LineDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD11F4697B900CFDF38 /* LineDataExtract.swift */; };
+		8ECA8D061F4697B900CFDF38 /* RNLineChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD21F4697B900CFDF38 /* RNLineChartManager.swift */; };
+		8ECA8D071F4697B900CFDF38 /* RNLineChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD31F4697B900CFDF38 /* RNLineChartManagerBridge.m */; };
+		8ECA8D081F4697B900CFDF38 /* RNLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD41F4697B900CFDF38 /* RNLineChartView.swift */; };
+		8ECA8D091F4697B900CFDF38 /* PieDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD61F4697B900CFDF38 /* PieDataExtract.swift */; };
+		8ECA8D0A1F4697B900CFDF38 /* RNPieChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD71F4697B900CFDF38 /* RNPieChartManager.swift */; };
+		8ECA8D0B1F4697B900CFDF38 /* RNPieChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD81F4697B900CFDF38 /* RNPieChartManagerBridge.m */; };
+		8ECA8D0C1F4697B900CFDF38 /* RNPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CD91F4697B900CFDF38 /* RNPieChartView.swift */; };
+		8ECA8D0D1F4697B900CFDF38 /* RadarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CDB1F4697B900CFDF38 /* RadarDataExtract.swift */; };
+		8ECA8D0E1F4697B900CFDF38 /* RNRadarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CDC1F4697B900CFDF38 /* RNRadarChartManager.swift */; };
+		8ECA8D0F1F4697B900CFDF38 /* RNRadarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CDD1F4697B900CFDF38 /* RNRadarChartManagerBridge.m */; };
+		8ECA8D101F4697B900CFDF38 /* RNRadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CDE1F4697B900CFDF38 /* RNRadarChartView.swift */; };
+		8ECA8D111F4697B900CFDF38 /* RNBarLineChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE01F4697B900CFDF38 /* RNBarLineChartViewBase.swift */; };
+		8ECA8D121F4697B900CFDF38 /* RNChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE21F4697B900CFDF38 /* RNChartViewBase.swift */; };
+		8ECA8D131F4697B900CFDF38 /* RNYAxisChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE41F4697B900CFDF38 /* RNYAxisChartViewBase.swift */; };
+		8ECA8D141F4697B900CFDF38 /* RNScatterChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE61F4697B900CFDF38 /* RNScatterChartManager.swift */; };
+		8ECA8D151F4697B900CFDF38 /* RNScatterChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE71F4697B900CFDF38 /* RNScatterChartManagerBridge.m */; };
+		8ECA8D161F4697B900CFDF38 /* RNScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE81F4697B900CFDF38 /* RNScatterChartView.swift */; };
+		8ECA8D171F4697B900CFDF38 /* ScatterDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CE91F4697B900CFDF38 /* ScatterDataExtract.swift */; };
+		8ECA8D181F4697B900CFDF38 /* BridgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CEB1F4697B900CFDF38 /* BridgeUtils.swift */; };
+		8ECA8D191F4697B900CFDF38 /* ChartDataSetConfigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CEC1F4697B900CFDF38 /* ChartDataSetConfigUtils.swift */; };
+		8ECA8D1A1F4697B900CFDF38 /* EntryToDictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA8CED1F4697B900CFDF38 /* EntryToDictionaryUtils.swift */; };
+		F5E4CF91B83C174D2AFC7FFC /* Pods_RN30Code.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798B9B5E84D1B69FE12DA036 /* Pods_RN30Code.framework */; };
 		CEB37A44744E43ECAA8D37AB /* libLRDRCTSimpleToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E177B0250668422A87E997F8 /* libLRDRCTSimpleToast.a */; };
 /* End PBXBuildFile section */
 
@@ -119,34 +162,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = ART;
-		};
-		27AA45B41F30730500283D18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RCTVideo;
-		};
-		27AA45B61F30730500283D18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
-			remoteInfo = "RCTVideo-tvOS";
-		};
-		27AA45D81F30740100283D18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37A76E014D694EBF84F8101F /* LRDRCTSimpleToast.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 15209BEF1D250F63000D0F44;
-			remoteInfo = LRDRCTSimpleToast;
-		};
-		27FC7DA61F34209300AF32E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF1D96BCAAEC44D3AB222D97 /* RCTBaiduMap.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EF3C22561CC2C30D0099E9B6;
-			remoteInfo = RCTBaiduMap;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -325,11 +340,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RN30Code/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RN30Code/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1B46C67DFBD0484FA28DFE5E /* libRCTBaiduMap.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBaiduMap.a; sourceTree = "<group>"; };
 		237B8D959E2B4C38B72E8A6C /* imageCropPicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = imageCropPicker.xcodeproj; path = "../node_modules/react-native-image-crop-picker/ios/imageCropPicker.xcodeproj"; sourceTree = "<group>"; };
 		2741D8591F25EAFA009F2427 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* RN30Code-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RN30Code-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RN30Code-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RN30Code-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		37A76E014D694EBF84F8101F /* LRDRCTSimpleToast.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LRDRCTSimpleToast.xcodeproj; path = "../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast.xcodeproj"; sourceTree = "<group>"; };
 		39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		5D800C493FC34DABB36F4E6F /* RCTBEEPickerManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBEEPickerManager.xcodeproj; path = "../node_modules/react-native-picker/ios/RCTBEEPickerManager.xcodeproj"; sourceTree = "<group>"; };
@@ -341,6 +356,57 @@
 		8E93A9901F205F05006403A0 /* ImageCropPickerSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImageCropPickerSDK; sourceTree = "<group>"; };
 		8E93A9921F206017006403A0 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E93A9951F206017006403A0 /* QBImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECA8CB41F4697B900CFDF38 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		8ECA8CB61F4697B900CFDF38 /* BarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CB71F4697B900CFDF38 /* RNBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CB81F4697B900CFDF38 /* RNBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBarChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CB91F4697B900CFDF38 /* RNBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartView.swift; sourceTree = "<group>"; };
+		8ECA8CBA1F4697B900CFDF38 /* RNBarChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartViewBase.swift; sourceTree = "<group>"; };
+		8ECA8CBB1F4697B900CFDF38 /* RNHorizontalBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CBC1F4697B900CFDF38 /* RNHorizontalBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHorizontalBarChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CBD1F4697B900CFDF38 /* RNHorizontalBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartView.swift; sourceTree = "<group>"; };
+		8ECA8CBF1F4697B900CFDF38 /* BubbleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CC01F4697B900CFDF38 /* RNBubbleChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CC11F4697B900CFDF38 /* RNBubbleChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBubbleChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CC21F4697B900CFDF38 /* RNBubbleChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartView.swift; sourceTree = "<group>"; };
+		8ECA8CC41F4697B900CFDF38 /* CandleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CC51F4697B900CFDF38 /* RNCandleStickChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CC61F4697B900CFDF38 /* RNCandleStickChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCandleStickChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CC71F4697B900CFDF38 /* RNCandleStickChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartView.swift; sourceTree = "<group>"; };
+		8ECA8CC91F4697B900CFDF38 /* CombinedDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CCA1F4697B900CFDF38 /* RNCombinedChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CCB1F4697B900CFDF38 /* RNCombinedChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCombinedChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CCC1F4697B900CFDF38 /* RNCombinedChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartView.swift; sourceTree = "<group>"; };
+		8ECA8CCD1F4697B900CFDF38 /* DataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CCF1F4697B900CFDF38 /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeValueFormatter.swift; sourceTree = "<group>"; };
+		8ECA8CD11F4697B900CFDF38 /* LineDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CD21F4697B900CFDF38 /* RNLineChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CD31F4697B900CFDF38 /* RNLineChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLineChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CD41F4697B900CFDF38 /* RNLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartView.swift; sourceTree = "<group>"; };
+		8ECA8CD61F4697B900CFDF38 /* PieDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CD71F4697B900CFDF38 /* RNPieChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CD81F4697B900CFDF38 /* RNPieChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPieChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CD91F4697B900CFDF38 /* RNPieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartView.swift; sourceTree = "<group>"; };
+		8ECA8CDB1F4697B900CFDF38 /* RadarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CDC1F4697B900CFDF38 /* RNRadarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CDD1F4697B900CFDF38 /* RNRadarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRadarChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CDE1F4697B900CFDF38 /* RNRadarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartView.swift; sourceTree = "<group>"; };
+		8ECA8CDF1F4697B900CFDF38 /* RNBarLineChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBarLineChartManagerBridge.h; sourceTree = "<group>"; };
+		8ECA8CE01F4697B900CFDF38 /* RNBarLineChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarLineChartViewBase.swift; sourceTree = "<group>"; };
+		8ECA8CE11F4697B900CFDF38 /* RNChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNChartManagerBridge.h; sourceTree = "<group>"; };
+		8ECA8CE21F4697B900CFDF38 /* RNChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNChartViewBase.swift; sourceTree = "<group>"; };
+		8ECA8CE31F4697B900CFDF38 /* RNYAxisChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYAxisChartManagerBridge.h; sourceTree = "<group>"; };
+		8ECA8CE41F4697B900CFDF38 /* RNYAxisChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNYAxisChartViewBase.swift; sourceTree = "<group>"; };
+		8ECA8CE61F4697B900CFDF38 /* RNScatterChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartManager.swift; sourceTree = "<group>"; };
+		8ECA8CE71F4697B900CFDF38 /* RNScatterChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNScatterChartManagerBridge.m; sourceTree = "<group>"; };
+		8ECA8CE81F4697B900CFDF38 /* RNScatterChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartView.swift; sourceTree = "<group>"; };
+		8ECA8CE91F4697B900CFDF38 /* ScatterDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterDataExtract.swift; sourceTree = "<group>"; };
+		8ECA8CEB1F4697B900CFDF38 /* BridgeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeUtils.swift; sourceTree = "<group>"; };
+		8ECA8CEC1F4697B900CFDF38 /* ChartDataSetConfigUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataSetConfigUtils.swift; sourceTree = "<group>"; };
+		8ECA8CED1F4697B900CFDF38 /* EntryToDictionaryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryToDictionaryUtils.swift; sourceTree = "<group>"; };
+		8ECA8D1B1F46980F00CFDF38 /* RN30Code-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RN30Code-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADE3BA97636B4AF68B58A67C /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		E20CE2366AD35EA959EE7691 /* Pods-RN30Code.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN30Code.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RN30Code/Pods-RN30Code.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE3BA97636B4AF68B58A67C /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		E177B0250668422A87E997F8 /* libLRDRCTSimpleToast.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLRDRCTSimpleToast.a; sourceTree = "<group>"; };
 		FF1D96BCAAEC44D3AB222D97 /* RCTBaiduMap.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBaiduMap.xcodeproj; path = "../node_modules/react-native-baidu-map/ios/RCTBaiduMap.xcodeproj"; sourceTree = "<group>"; };
@@ -376,6 +442,7 @@
 				5DAD3E6835564081AC3254AF /* libRCTBEEPickerManager.a in Frameworks */,
 				35156C5C64074653AAD97BD6 /* libimageCropPicker.a in Frameworks */,
 				1D89663A73F04BA1910756EE /* libRCTVideo.a in Frameworks */,
+				F5E4CF91B83C174D2AFC7FFC /* Pods_RN30Code.framework in Frameworks */,
 				CEB37A44744E43ECAA8D37AB /* libLRDRCTSimpleToast.a in Frameworks */,
 				8D743DCAC6CD44738A93FACC /* libRCTBaiduMap.a in Frameworks */,
 			);
@@ -521,6 +588,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		328697A5A219664E26F8846A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798B9B5E84D1B69FE12DA036 /* Pods_RN30Code.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27AA459E1F30730500283D18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,8 +657,6 @@
 				5D800C493FC34DABB36F4E6F /* RCTBEEPickerManager.xcodeproj */,
 				237B8D959E2B4C38B72E8A6C /* imageCropPicker.xcodeproj */,
 				39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */,
-				37A76E014D694EBF84F8101F /* LRDRCTSimpleToast.xcodeproj */,
-				FF1D96BCAAEC44D3AB222D97 /* RCTBaiduMap.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -759,20 +832,12 @@
 					ProjectRef = 237B8D959E2B4C38B72E8A6C /* imageCropPicker.xcodeproj */;
 				},
 				{
-					ProductGroup = 27AA45D31F30740100283D18 /* Products */;
-					ProjectRef = 37A76E014D694EBF84F8101F /* LRDRCTSimpleToast.xcodeproj */;
-				},
-				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
 					ProductGroup = 5E91572E1DD0AC6500FF2AA8 /* Products */;
 					ProjectRef = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
-				},
-				{
-					ProductGroup = 27FC7D9D1F34209300AF32E9 /* Products */;
-					ProjectRef = FF1D96BCAAEC44D3AB222D97 /* RCTBaiduMap.xcodeproj */;
 				},
 				{
 					ProductGroup = 8E93A96F1F205E85006403A0 /* Products */;
@@ -805,6 +870,10 @@
 				{
 					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
 					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = 8ED323DA1F4685A700BC5157 /* Products */;
+					ProjectRef = 39CB0578A79F48BBB11C90E5 /* RCTVideo.xcodeproj */;
 				},
 				{
 					ProductGroup = 27AA459E1F30730500283D18 /* Products */;
@@ -891,34 +960,6 @@
 			fileType = archive.ar;
 			path = libART.a;
 			remoteRef = 2741D85D1F25EAFA009F2427 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		27AA45B51F30730500283D18 /* libRCTVideo.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTVideo.a;
-			remoteRef = 27AA45B41F30730500283D18 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		27AA45B71F30730500283D18 /* libRCTVideo.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTVideo.a;
-			remoteRef = 27AA45B61F30730500283D18 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		27AA45D91F30740100283D18 /* libLRDRCTSimpleToast.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLRDRCTSimpleToast.a;
-			remoteRef = 27AA45D81F30740100283D18 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		27FC7DA71F34209300AF32E9 /* libRCTBaiduMap.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTBaiduMap.a;
-			remoteRef = 27FC7DA61F34209300AF32E9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -1198,16 +1239,12 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = RN30CodeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1231,16 +1268,12 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = RN30CodeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1265,8 +1298,6 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = RN30Code/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1291,8 +1322,6 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = RN30Code/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1324,15 +1353,11 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = "RN30Code-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1366,15 +1391,11 @@
 					"$(SRCROOT)..\node_modules\neact-native-pickeriosRCTBEEPickerManager",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
-					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
-					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap/**",
 				);
 				INFOPLIST_FILE = "RN30Code-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1409,8 +1430,6 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RN30Code-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1435,8 +1454,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

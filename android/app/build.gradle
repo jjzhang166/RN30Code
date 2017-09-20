@@ -126,6 +126,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-charts-wrapper')
     compile project(':react-native-baidu-map')
     compile project(':react-native-video')
     compile project(':react-native-image-crop-picker')

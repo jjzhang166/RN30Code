@@ -108,6 +108,9 @@ export default class HomePage extends Component {
             case 14:
                 navigate("CustomPage");
                 break;
+            case 15:
+                navigate("ChartPage");
+                break;
             default:
         }
     }
